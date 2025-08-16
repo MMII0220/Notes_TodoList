@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "0344266d-9731-470c-8f21-c83bc8d53a5d",
+		"name": "Notes_TodoList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "47557761",
+		"_collection_link": "https://firdavs022006-4905654.postman.co/workspace/Firdavs's-Workspace~5a951002-0148-4933-8bb7-3240fce976c1/collection/47557761-0344266d-9731-470c-8f21-c83bc8d53a5d?action=share&source=collection_link&creator=47557761"
+	},
+	"item": [
+		{
+			"name": "Создать новую категорию",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:6666/categories/"
+			},
+			"response": []
+		},
+		{
+			"name": "Получить категорию по id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6666/categories?id=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"categories"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Обновить категорию по id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6666/categories/:1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"categories",
+						":1"
+					],
+					"variable": [
+						{
+							"key": "1",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удалить категорию",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:6666/categories/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:6666/categories/ping"
+			},
+			"response": []
+		},
+		{
+			"name": "Получить весь список категорий",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
